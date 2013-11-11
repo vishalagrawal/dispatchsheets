@@ -64,7 +64,7 @@ $autoload['libraries'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('url','utility');
 
 
 /*
@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('Connect_to_mysql');
+$autoload['model'] = array('Connect_to_mysql','Connect_to_tmw');
 
 
 /* End of file autoload.php */
