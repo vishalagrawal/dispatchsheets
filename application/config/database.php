@@ -45,25 +45,51 @@
 | the active record class
 */
 
-$active_group = 'default';
+/* 
+ *	connecting to the TMW database
+ */
+
+$active_group = 'tmw';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['tmw']['hostname'] = '';
+$db['tmw']['username'] = 'vishala@jpdonmoyer.com';
+$db['tmw']['password'] = 'Trucking22';
+$db['tmw']['database'] = '';
+$db['tmw']['dbdriver'] = 'odbc';
+$db['tmw']['dbprefix'] = '';
+$db['tmw']['pconnect'] = FALSE;
+$db['tmw']['db_debug'] = FALSE;
+$db['tmw']['cache_on'] = FALSE;
+$db['tmw']['cachedir'] = '';
+$db['tmw']['char_set'] = 'utf8';
+$db['tmw']['dbcollat'] = 'utf8_general_ci';
+$db['tmw']['swap_pre'] = '';
+$db['tmw']['autoinit'] = TRUE;
+$db['tmw']['stricton'] = FALSE; 
 
+/* 
+ *	connecting to the MYSQL database
+ */
+
+$active_group = 'mysql';
+$active_record = TRUE;
+
+$db['mysql']['hostname'] = 'localhost';
+$db['mysql']['username'] = 'root';
+$db['mysql']['password'] = 'root';
+$db['mysql']['database'] = 'dispatchsheets';
+$db['mysql']['dbdriver'] = 'mysql';
+$db['mysql']['dbprefix'] = '';
+$db['mysql']['pconnect'] = TRUE;
+$db['mysql']['db_debug'] = FALSE;
+$db['mysql']['cache_on'] = FALSE;
+$db['mysql']['cachedir'] = '';
+$db['mysql']['char_set'] = 'utf8';
+$db['mysql']['dbcollat'] = 'utf8_general_ci';
+$db['mysql']['swap_pre'] = '';
+$db['mysql']['autoinit'] = TRUE;
+$db['mysql']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('Connect_to_mysql');
 
 
 /* End of file autoload.php */
