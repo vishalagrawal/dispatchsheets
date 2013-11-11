@@ -52,11 +52,11 @@
 $active_group = 'tmw';
 $active_record = TRUE;
 
-$db['tmw']['hostname'] = '';
-$db['tmw']['username'] = 'vishala@jpdonmoyer.com';
-$db['tmw']['password'] = 'Trucking22';
-$db['tmw']['database'] = '';
-$db['tmw']['dbdriver'] = 'odbc';
+$db['tmw']['hostname'] = 'localhost';
+$db['tmw']['username'] = 'root';
+$db['tmw']['password'] = 'root';
+$db['tmw']['database'] = 'dispatchpuppy';
+$db['tmw']['dbdriver'] = 'mysql';
 $db['tmw']['dbprefix'] = '';
 $db['tmw']['pconnect'] = FALSE;
 $db['tmw']['db_debug'] = FALSE;
