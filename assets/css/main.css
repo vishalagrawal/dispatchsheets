@@ -97,9 +97,73 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
+a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
 
+.dispatch-sheet-date-controls:hover{
+    color: #E85C41;
+    background-color: #F2F2F2;
+    cursor: pointer;
+}
 
+.dispatch-sheet-controls {
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.dispatch-sheet-driver-controls {
+    padding: 1% 0 1% 0;
+    width: 17.6%; /*golden ration percentage*/
+    float: left;
+    text-align: center;
+}
+
+.dispatch-sheet-date-controls {
+    padding: 1% 0 1% 0;
+    width: 20.6%; /*golden ration percentage*/
+    float: left;
+    text-align: center;
+}
+
+.dispatch-sheet-date {
+    padding: 1% 0 1% 0;
+    width: 41.2%; /*golden ration percentage*/
+    float: left;
+    text-align: center;
+}
+
+.dispatch-sheet-headers {
+    text-align: center;
+    font-size: 16px;
+}
+
+.left-column-drivers {
+    background-color: #FEDE88;
+    padding: 0.75% 0 0.75% 0;
+    width: 17.6%; /*golden ration percentage*/
+    float: left;
+    color: #5D5C5D;
+}
+
+.right-column-days {
+    background-color: #6DC5DC;
+    padding: 0.75% 0 0.75% 0;
+    width: 20.6%; /*golden ration percentage*/
+    float: left;
+    color: white;
+}
+
+.alternate-color {
+    background-color: #B1E0EC;
+    color: #5D5C5D;
+}
 
 
 

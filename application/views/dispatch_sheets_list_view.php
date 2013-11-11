@@ -24,7 +24,58 @@
         
         <!-- Add your site or application content here -->
         
-        Testing
+        <!-- dispatch sheet controls -->
+        <div class="dispatch-sheet-controls">
+            <div class="dispatch-sheet-driver-controls">
+                driver filter(s)
+            </div>
+            
+            <div class="dispatch-sheet-date-controls" onclick="">
+                &larr; Previous Day
+            </div>
+            
+            <div class="dispatch-sheet-date" id="date-range">
+                   <?echo date('F j, Y',strtotime($start_date));?> - <?echo date('F j, Y',strtotime("+3 day", strtotime($start_date)));?>
+            </div>
+            
+            <div class="dispatch-sheet-date-controls" onclick="">
+                    Next Day &rarr;
+            </div>
+        </div>
+
+        <!-- headers for the dispatch sheet -->
+        <div class="dispatch-sheet-headers">
+            <div class="left-column-drivers">
+                <div class="header">
+                    Drivers
+                </div>
+            </div>
+
+            <div class="right-column-days">
+                <div class="header" id="start-date">
+                    <?echo $start_date;?>
+                </div>
+            </div>
+
+            <div class="right-column-days alternate-color">
+                <div class="header" id="start-date-plus-1">
+                    <?echo date('l, F j Y',strtotime("+1 day", strtotime($start_date)));?>
+                </div>
+            </div>
+
+            <div class="right-column-days" id="start-date-plus-2">
+                <div class="header">
+                    <?echo date('l, F j Y',strtotime("+2 day", strtotime($start_date)));?>
+                </div>
+            </div>
+
+            <div class="right-column-days alternate-color">
+                <div class="header" id="start-date-plus-3">
+                    <?echo date('l, F j Y',strtotime("+3 day", strtotime($start_date)));?>
+                </div>
+            </div>
+        </div>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
