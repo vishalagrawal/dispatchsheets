@@ -5,7 +5,6 @@ class Dispatch_sheets extends CI_Controller {
 	public function index()
 	{
 		// insert models
-
 		$data = array(
 			'title'					=>	'Dispatch Sheets',
 			'start_date'			=>	date('l, F j Y'),

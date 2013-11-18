@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="icon" href="<? echo base_url();?>/favicon.ico" type="image/ico">
+        <link rel="icon" href="<?php echo base_url();?>/favicon.ico" type="image/ico">
         <link rel="stylesheet" type="text/css" href="<?php echo asset_url();?>css/normalize.css">
         <link rel="stylesheet" type="text/css" href="<?php echo asset_url();?>css/main.css">
         <script type="text/javascript" src="<?php echo asset_url();?>js/main.js"></script>
@@ -35,7 +35,7 @@
             </div>
             
             <div class="dispatch-sheet-date" id="date-range">
-                   <?echo date('F j, Y',strtotime($start_date));?> - <?echo date('F j, Y',strtotime("+3 day", strtotime($start_date)));?>
+                   <?php echo date('F j, Y',strtotime($start_date));?> - <?php echo date('F j, Y',strtotime("+3 day", strtotime($start_date)));?>
             </div>
             
             <div class="dispatch-sheet-date-controls" onclick="">
@@ -53,25 +53,25 @@
 
             <div class="right-column-days">
                 <div class="header" id="start-date">
-                    <?echo $start_date;?>
+                    <?php echo $start_date;?>
                 </div>
             </div>
 
             <div class="right-column-days alternate-color">
                 <div class="header" id="start-date-plus-1">
-                    <?echo date('l, F j Y',strtotime("+1 day", strtotime($start_date)));?>
+                    <?php echo date('l, F j Y',strtotime("+1 day", strtotime($start_date)));?>
                 </div>
             </div>
 
             <div class="right-column-days" id="start-date-plus-2">
                 <div class="header">
-                    <?echo date('l, F j Y',strtotime("+2 day", strtotime($start_date)));?>
+                    <?php echo date('l, F j Y',strtotime("+2 day", strtotime($start_date)));?>
                 </div>
             </div>
 
             <div class="right-column-days alternate-color">
                 <div class="header" id="start-date-plus-3">
-                    <?echo date('l, F j Y',strtotime("+3 day", strtotime($start_date)));?>
+                    <?php echo date('l, F j Y',strtotime("+3 day", strtotime($start_date)));?>
                 </div>
             </div>
         </div>
